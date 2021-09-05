@@ -1,0 +1,47 @@
+*{
+  /*--indigo-800 : #290661;*/
+  font-family: Lato;
+}
+
+body {
+	background: linear-gradient(to bottom right, peru, saddlebrown);
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+main {
+	/*background: green, blue;*/
+}
+
+#game-table div {
+	border: 1px solid black;
+	text-align: center;
+}
+
+#new-game{
+		
+}
+
+#player1-title{
+}
+
+#player2-title{
+}
+
+#player1-score-title{
+}
+
+#dice{
+}
+
+#player2-score-title{
+}
+
+#player1-score{
+}
+
+#play{
+}
+
+#player2-score{
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CDN CSS -->
+  <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+  crossorigin="anonymous">
+  <!-- My CSS -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <title>DICE Duel | Accueil</title>
+
+  <meta name="description" content="Jeu de dés. Vous lancez tant que vous souhaitez, 
+  puis vous validez un score. Si vous faites 1, vous passez votre tour sans marquer de point."/>
+
+
+
+</head>
+<body>
+<main class="container m-5 h-75 row ">
+  <div class="row align-items-center" id="game-table">    
+        
+		<div class="col-12 d-inline-block card-rounded-0" id="new-game">
+		<!--<i class="bi bi-plus-circle"></i>-->
+		<img src="img/plus-circle.svg" alt="plus-circle"> NEW GAME
+		</div>
+		
+		
+		<div class="col-4 col-sm-5 d-inline-block card-rounded-0" id="player1-title">
+          PLAYER 1 <img src="img/circle-fill.svg" width="2%" alt="circle-fill">
+		  <!--<i class="bi bi-circle-fill"></i>-->
+        </div>
+		<div class="col-2 d-inline-block card-rounded-0">
+		
+		</div>
+        <div class="col-4 col-sm-5 d-inline-block card rounded-0" id="player2-title">
+          PLAYER 2
+        </div>
+		
+		
+		
+		<div class="col-4 col-sm-5 d-inline-block card-rounded-0" id="player1-score-title">
+          SCORE 1
+        </div>
+		<div class="col-2 d-inline-block card-rounded-0" id="dice">
+		<!--<i class="bi bi-dice-1"></i>-->
+		<img src="img/dice-1.svg" width="80px" alt="dice-1">
+		</div>
+        <div class="col-4 col-sm-5 d-inline-block card rounded-0" id="player2-score-title">
+          SCORE 2
+        </div>
+		
+		
+		
+		<div class="col-4 col-sm-5 d-inline-block card-rounded-0" id="player1-score">
+          CURRENT<br/>11
+        </div>
+		<div class="col-2 d-inline-block card-rounded-0" id="play">
+		<!--<i class="bi bi-arrow-repeat"></i>-->
+		<img src="img/arrow-repeat.svg" alt="arrow-repeat"> ROLL DICE<br/>
+		<!--<i class="bi bi-box-arrow-in-down"></i>-->
+		<img src="img/box-arrow-in-down.svg" alt="box-arrow-in-down"> HOLD
+		</div>
+        <div class="col-4 col-sm-5 d-inline-block card rounded-0" id="player2-score">
+          CURRENT<br/>43
+        </div>
+		
+   </div>
+
+  
+  
+</main>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+  crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" 
+  integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" 
+  crossorigin="anonymous"></script>
+
+</body>
+</html>
