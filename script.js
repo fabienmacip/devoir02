@@ -40,7 +40,9 @@ const holdScore = document.getElementById('hold');
 // FONCTIONS liées aux clics sur les boutons
 // Lance une nouvelle partie
 function runNewGame() {
-  initGame();
+  if ( confirm( "Relancer une partie ?" ) ) {
+    initGame();
+  }
 }
 
 // Affichage du bon dé / Fonction à inclure dans un autre fichier
@@ -151,6 +153,9 @@ function throwDice(){
     }
   } // Fin if(diceValue === 1)
 
+  // Ici, on a fait autre chose que 1, donc on réactive le bouton HOLD
+  holdScore.disabled = false;
+
   // Sinon, entre 2 et 6
   if(tourJoueur1){
     // On augmente le score
@@ -172,6 +177,8 @@ function throwDice(){
 function winner(numJoueur) {
   let msg = numJoueur == 1 ? globalScore1 : globalScore2;
   msg = "BRAVO Joueur " + numJoueur + " !!!\n\nVous avez gagné avec un score de " +  msg + ".";
+  holdScore.disabled = true;
+  rollDice.disabled = true;
   alert(msg);
 }
 
@@ -261,6 +268,9 @@ function initGame(){
   player2GlobalScore.textContent = globalScore2;
   currentScore1.textContent = roundScore;
   currentScore2.textContent = roundScore;
+
+  holdScore.disabled = true;
+  rollDice.disabled = false;
 
   //TO DO 
   //Désactiver le boutton HOLD en début de partie
