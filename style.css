@@ -1,6 +1,5 @@
-*{
-  /*--indigo-800 : #290661;*/
-  font-family: Lato;
+* {
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -10,41 +9,53 @@ body {
 }
 
 main {
-	/*background: green, blue;*/
+	background-image: url(img/gris.jpg), url(img/blanc.jpg);
+  background-position: left, right;
+	background-size: 50%, 50%;
+  background-repeat: no-repeat, no-repeat;
+
+}
+
+.bi {
+	color: red;
 }
 
 #game-table div {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	text-align: center;
+	border: 0px;
 }
 
 #new-game{
+	font-size: 1.2rem;
 		
 }
 
 #player1-title{
+	font-size: 3rem;
 }
 
-#circle-player-1{
-
+#circle-player-1, #circle-player-2{
+	font-size: 1.5rem;
 }
 
 #player2-title{
+	font-size: 3rem;
 }
 
-#circle-player-2{
-
-}
 
 #player1-global-score{
 	color: red;
+	font-size: 5rem;
 }
 
 #dice{
 }
 
-#dice1{
-
+#dice1, #dice2, #dice3, #dice4, #dice5, #dice6{
+ color:red;
+ font-size: 5rem;
+ 
 }
 #dice2{
 	display: none;
@@ -64,29 +75,34 @@ main {
 
 #player2-global-score{
 	color: red;
+	font-size: 5rem;
 }
 
-#player1-score{
+#player1-score, #player2-score{
 	background-color: red;
+	width: 150px;
+}
+
+.current-word{
+	font-size: 0.8rem;
 }
 
 #current-score-1{
 	color: white;
+	font-size: 1.5rem;
 }
 #play{
 }
 
 #roll-dice{
-
+	font-size: 1.2rem;
 }
 
 #hold{
-
+	font-size: 1.2rem;
 }
 
-#player2-score{
-	background-color: red;
-}
 #current-score-2{
 	color: white;
+	font-size: 1.5rem;
 }
