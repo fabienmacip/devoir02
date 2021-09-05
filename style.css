@@ -25,23 +25,68 @@ main {
 #player1-title{
 }
 
+#circle-player-1{
+
+}
+
 #player2-title{
 }
 
-#player1-score-title{
+#circle-player-2{
+
+}
+
+#player1-global-score{
+	color: red;
 }
 
 #dice{
 }
 
-#player2-score-title{
+#dice1{
+
+}
+#dice2{
+	display: none;
+}
+#dice3{
+	display: none;
+}
+#dice4{
+	display: none;
+}
+#dice5{
+	display: none;
+}
+#dice6{
+	display: none;
+}
+
+#player2-global-score{
+	color: red;
 }
 
 #player1-score{
+	background-color: red;
 }
 
+#current-score-1{
+	color: white;
+}
 #play{
 }
 
+#roll-dice{
+
+}
+
+#hold{
+
+}
+
 #player2-score{
+	background-color: red;
+}
+#current-score-2{
+	color: white;
 }
