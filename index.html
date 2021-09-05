@@ -1,130 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CDN CSS -->
-<!--
-  <link rel="stylesheet" 
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-  crossorigin="anonymous">
--->
-  <!-- My CSS -->
+  <!-- BOOTSTRAP CSS & ICONS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- FIN BOOTSTRAP -->
 
-<!--BOOTSTRAP bis-->
-<!-- BOOTSTRAP CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
-rel="stylesheet" 
-integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<!-- FIN-->
+  <!-- LATO -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-
-<!-- LATO -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-
+  <!-- CSS Personnalisé -->
   <link href="style.css" rel="stylesheet" type="text/css">
 
   <title>DICE Duel | Accueil</title>
 
   <meta name="description" content="Jeu de dés. Vous lancez tant que vous souhaitez, 
-  puis vous validez un score. Si vous faites 1, vous arrêtez votre tour et
-  votre score CURRENT est ajouté à votre score TOTAL."/>
-
-
+    puis vous validez un score. Si vous faites 1, vous arrêtez votre tour et
+    votre score CURRENT est ajouté à votre score TOTAL."/>
 
 </head>
+
 <body>
-<main class="container m-5 h-75 row ">
-  <div class="row align-items-center" id="game-table">    
+  <!-- sm md lg -->
+  <main class="container mx-auto px-1 px-md-5 h-100 row justify-content-center">
+    <div class="row my-5 align-items-center justify-content-center" id="game-table">    
+          
+      <!-- ************* LIGNE NEW GAME  *************** -->
+      <div class="row">
+        <div class="col-12 d-inline-block card-rounded-0">
+        <button id="new-game" class="border-0 bg-transparent">
+          <i class="bi bi-plus-circle"></i> NEW GAME
+        </button>
+        </div>
+      </div>
         
-<!-- ************* LIGNE NEW GAME  *************** -->
-
-		<div class="col-12 d-inline-block card-rounded-0">
-		<button id="new-game" class="border-0 bg-transparent">
-      <i class="bi bi-plus-circle"></i> NEW GAME
-    </button>
-		</div>
-		
-<!-- ************* LIGNE PLAYER 1 PLAYER 2  *************** -->
-    
-		<div class="col-4 col-sm-5 d-inline-block card-rounded-0" id="player1-title">
-          PLAYER 1 <i class="bi bi-circle-fill" id="circle-player-1"></i>
-    </div>
-
-    <div class="col-2 d-inline-block card-rounded-0">
-		</div>
-
-    <div class="col-4 col-sm-5 d-inline-block card rounded-0" id="player2-title">
-          PLAYER 2 <i class="bi bi-circle-fill" id="circle-player-2"></i>
-    </div>
-	
-<!-- ************* LIGNE SCORE GLOBAL et DE  *************** -->		
-		
-		<div class="col-4 col-sm-5 d-inline-block card-rounded-0" id="player1-global-score">
-          SCORE 1
+      <!-- ************* PLAYERS et SCORES GLOBAUX & DE ************-->
+      <div class="row justify-content-center">
+        <!-- ************* LIGNE PLAYER 1 PLAYER 2  *************** -->
+        <div class="row">
+          <div class="col-5 d-inline-block card-rounded-0" id="player1-title">
+                PLAYER 1 <i class="bi bi-circle-fill" id="circle-player-1"></i>
+          </div>
+      
+          <div class="col-2 d-inline-block card-rounded-0">
+          </div>
+      
+          <div class="col-5 d-inline-block card rounded-0" id="player2-title">
+                PLAYER 2 <i class="bi bi-circle-fill" id="circle-player-2"></i>
+          </div>
+        </div> 
+        
+        <!-- ************* LIGNE SCORE GLOBAL et DE  *************** -->		
+        <div class="row">
+          <div class="col-4 d-inline-block card-rounded-0" id="player1-global-score">
+                SCORE 1
+              </div>
+          <div class="col-4 d-inline-block card-rounded-0" id="dice">
+          <i class="bi bi-dice-1" id="dice1"></i>
+          <i class="bi bi-dice-2" id="dice2"></i>
+          <i class="bi bi-dice-3" id="dice3"></i>
+          <i class="bi bi-dice-4" id="dice4"></i>
+          <i class="bi bi-dice-5" id="dice5"></i>
+          <i class="bi bi-dice-6" id="dice6"></i>
+          
+          </div>
+              <div class="col-4 d-inline-block card rounded-0" id="player2-global-score">
+                SCORE 2
+          </div>
         </div>
-		<div class="col-2 d-inline-block card-rounded-0" id="dice">
-		<i class="bi bi-dice-1" id="dice1"></i>
-    <i class="bi bi-dice-2" id="dice2"></i>
-    <i class="bi bi-dice-3" id="dice3"></i>
-    <i class="bi bi-dice-4" id="dice4"></i>
-    <i class="bi bi-dice-5" id="dice5"></i>
-    <i class="bi bi-dice-6" id="dice6"></i>
-		
-		</div>
-        <div class="col-4 col-sm-5 d-inline-block card rounded-0" id="player2-global-score">
-          SCORE 2
+      </div>        
+    <!-- ************* LIGNE CURRENT SCORE et BOUTONS ROLL et HOLD  *************** -->        
+    <div class="row justify-content-center">
+
+      <div class="col-4 col-md-4 d-inline-block card-rounded-0 py-2" id="player1-score">
+        <span class="current-word">CURRENT</span><br/><span id="current-score-1">11</span>
+      </div>
+      
+      <div class="col-4 col-lg-3 d-inline-block card-rounded-0" id="play">
+        <div class="mb-3">
+          <button id="roll-dice" class="border-0 bg-transparent">
+            <i class="bi bi-arrow-repeat"></i> ROLL DICE<br/>
+          </button>
         </div>
-		
-<!-- ************* LIGNE CURRENT SCORE et BOUTONS ROLL et HOLD  *************** -->        
-<div class="col-12">
+        <div>
+          <button id="hold" class="border-0 bg-transparent">
+            <i class="bi bi-box-arrow-in-down"></i> HOLD
+          </button>
+        </div>
+      </div>
+      
+      <div class="col-4 col-md-4 d-inline-block card rounded-0 pt-2 pb-2" id="player2-score">
+        <span class="current-word">CURRENT</span><br/><span id="current-score-2">43</span>
+      </div>
 
-  <div class="col-4 col-sm-5 d-inline-block card-rounded-0 pt-2 pb-2" id="player1-score">
-    <span class="current-word">CURRENT</span><br/><span id="current-score-1">11</span>
-  </div>
-  
-  <div class="col-2 d-inline-block card-rounded-0" id="play">
-    <div class="mb-3">
-      <button id="roll-dice" class="border-0 bg-transparent">
-        <i class="bi bi-arrow-repeat"></i> ROLL DICE<br/>
-      </button>
-    </div>
-  
-    <div>
-      <button id="hold" class="border-0 bg-transparent">
-        <i class="bi bi-box-arrow-in-down"></i> HOLD
-      </button>
     </div>
   </div>
+   
+  </main>
   
-  <div class="col-4 col-sm-5 d-inline-block card rounded-0 pt-2 pb-2" id="player2-score">
-    <span class="current-word">CURRENT</span><br/><span id="current-score-2">43</span>
-  </div>
-
-</div>
-</div>
-
-  
-  
-</main>
-<!--
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-    crossorigin="anonymous"></script>
-  
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" 
-    integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" 
-    crossorigin="anonymous"></script>
-
-
-
--->    
   <script type="text/javascript" src="script.js"></script>
 
 </body>

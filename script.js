@@ -13,7 +13,7 @@ let tourJoueur2 = false;
 var diceValue = 1;
 
 // Score pour gagner
-const SCORE_TO_WIN = 10;
+const SCORE_TO_WIN = 100;
 
 // On récupère les éléments du DOM
 const newGame = document.getElementById('new-game');
