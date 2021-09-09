@@ -104,7 +104,7 @@ function displayDice(diceNumber){
     default:
       break;
   } // Fin Switch
-  } // Fin fonction
+} // Fin fonction
 
 // Lance le dé
 function throwDice(){
