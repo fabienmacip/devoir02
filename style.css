@@ -9,10 +9,6 @@ body {
 	
 }
 
-main {
-	
-}
-
 .bi {
 	color: red;
 }
@@ -28,7 +24,6 @@ main {
 
 #new-game{
 	font-size: 1.2rem;
-		
 }
 
 #player1-title{
@@ -44,31 +39,16 @@ main {
 	font-size: 3rem;
 }
 
-
 #player1-global-score{
 	color: red;
 	font-size: 5rem;
 }
 
-
 #dice1, #dice2, #dice3, #dice4, #dice5, #dice6{
  color:red;
  font-size: 5rem;
- 
 }
-#dice2{
-	display: none;
-}
-#dice3{
-	display: none;
-}
-#dice4{
-	display: none;
-}
-#dice5{
-	display: none;
-}
-#dice6{
+#dice2, #dice3, #dice4, #dice5, #dice6 {
 	display: none;
 }
 
@@ -86,24 +66,13 @@ main {
 	font-size: 0.8rem;
 }
 
-#current-score-1{
+#current-score-1, #current-score-2 {
 	color: white;
 	font-size: 1.5rem;
 }
-#play{
-}
 
-#roll-dice{
+#roll-dice, #hold {
 	font-size: 1.2rem;
-}
-
-#hold{
-	font-size: 1.2rem;
-}
-
-#current-score-2{
-	color: white;
-	font-size: 1.5rem;
 }
 
 
@@ -131,7 +100,6 @@ main {
 		font-size: 2rem;
 	}
 
-
 	#dice1, #dice2, #dice3, #dice4, #dice5, #dice6{
 		font-size: 4rem;
 	}
@@ -155,6 +123,7 @@ main {
 	#roll-dice, #hold{
 		font-size: 0.7rem;
 	}
+
 }
 
 @media (max-width: 400px) {
@@ -165,6 +134,10 @@ main {
 
 	#circle-player-1, #circle-player-2{
 		font-size: 0.8rem;
+	}
+
+	#player1-global-score, #player2-global-score{
+		font-size: 3rem;
 	}
 
 }
